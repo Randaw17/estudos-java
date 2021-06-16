@@ -1,6 +1,6 @@
 package construtores.construtorFigura;
 public class ConstrutorFigura{
-    private double base,altura;
+    protected double base,altura;
 
     public ConstrutorFigura(double base, double altura){
         this.base = base;
@@ -22,11 +22,5 @@ public class ConstrutorFigura{
     }
     public double getAltura(){
         return altura;
-    }
-
-    public double calculoArea(){
-        double calculo;
-        calculo = this.base * this.altura;
-        return calculo;
     }
 }

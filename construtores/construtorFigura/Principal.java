@@ -2,20 +2,22 @@ package construtores.construtorFigura;
 
 public class Principal {
     public static void main(String[] args) {
-        ConstrutorFigura c1 = new ConstrutorFigura(20, 30);
-        System.out.printf("base: %.1f\n", c1.getBase());
-        System.out.printf("Altura: %.1f\n", c1.getAltura());
-        System.out.printf("Calculo da Área: %.1f\n", c1.calculoArea());
+        Triangulo t1 = new Triangulo();
+        t1.setBase(15);
+        t1.setAltura(20);
+        System.out.printf("base: %.1f\n", t1.getBase());
+        System.out.printf("Altura: %.1f\n", t1.getAltura());
+        System.out.printf("Calculo da Área: %.1f\n", t1.calculoArea());
 
         
         System.out.printf("\n");
 
-        ConstrutorFigura c2 = new ConstrutorFigura();
-        c2.setBase(15);
-        c2.setAltura(20);
+        Retangulo r1 = new Retangulo();
+        r1.setBase(15);
+        r1.setAltura(20);
 
-        System.out.printf("base: %.1f\n", c2.getBase());
-        System.out.printf("Altura: %.1f\n", c2.getAltura());
-        System.out.printf("Calculo da Área: %.1f\n", c2.calculoArea());
+        System.out.printf("base: %.1f\n", r1.getBase());
+        System.out.printf("Altura: %.1f\n", r1.getAltura());
+        System.out.printf("Calculo da Área: %.1f\n", r1.calculoArea());
     }
 }
